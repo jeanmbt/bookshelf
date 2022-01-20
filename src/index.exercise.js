@@ -7,3 +7,24 @@
 
 // 🐨 use ReactDOM to render the <App /> to the root element
 // 💰 find the root element with: document.getElementById('root')
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {Logo} from 'components/logo'
+
+function App() {
+  return (
+    <div>
+      <div>
+        <Logo />
+        <h1>Bookshelf</h1>
+      </div>
+      <div>
+        <button onClick={() => console.log('Login click')}>Login</button>
+        <button onClick={() => console.log('register click')}>Register</button>
+      </div>
+    </div>
+  )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
